@@ -216,10 +216,7 @@ textarea {
     content: " (" attr(title) ")";
   }
 
-  /*
-   * Don't show links that are fragment identifiers,
-   * or use the `javascript:` pseudo protocol
-   */
+  
   a[href^="#"]::after,
   a[href^="javascript:"]::after {
     content: "";
@@ -235,10 +232,7 @@ textarea {
     page-break-inside: avoid;
   }
 
-  /*
-   * Printing Tables:
-   * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
-   */
+  
   thead {
     display: table-header-group;
   }
@@ -260,4 +254,54 @@ textarea {
     page-break-after: avoid;
   }
 }
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #0d4127;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
 
+.sidebar a {
+  display: block;
+  color: rgb(250, 250, 250);
+  padding: 16px;
+  text-decoration: none;
+}
+
+
+.sidebar a:hover:not(.active) {
+  background-color: rgb(31, 77, 48);
+  color: white;
+}
+
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+.my-name {
+  color:rgb(250, 250, 250);
+  font-family: 'Bebas Neue', cursive;
+  font-family: 'Great Vibes', cursive;
+  font-family: 'Readex Pro', sans-serif;
+}
