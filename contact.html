@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title></title>
+  <title>Contact Page for Everyone</title>
   <meta name="portfolio-website" content="jade-dud-portfolio-for-work">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -39,4 +39,22 @@
         <a href="contact.html">Contact</a>
       </div>
 </nav>
+<h1 class="contact-me">Contact Me</h1>
+<div class="container">
+  <form action="action_page.php">
+    <label for="fname">Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Name here..">
+    <label for="lname">E-Mail</label>
+    <input type="text" id="lname" name="lastname" placeholder="Email here..">
+    <label for="country">Inquiry About</label>
+    <select id="country" name="country">
+      <option value="australia">Specific Work on Website</option>
+      <option value="canada">Work</option>
+      <option value="usa">Questions</option>
+    </select>
+    <label for="subject">Message</label>
+    <textarea id="subject" name="subject" placeholder="Let's talk!" style="height:200px"></textarea>
+    <input type="submit" value="Submit">
+  </form>
+</div>
 </html>
