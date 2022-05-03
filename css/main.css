@@ -327,11 +327,6 @@ div.content {
   height: 1000px;
 }
 
-.my-name {
-  color:rgb(250, 250, 250);
-  display: inline-block;
-  font-family: 'Readex Pro', sans-serif;
-}
 input[type=text], select, textarea {
   width: 100%; 
   padding: 12px; 
@@ -364,4 +359,24 @@ input[type=submit]:hover {
 .intro {
 font-family: Verdana, Geneva, Tahoma, sans-serif;
 font-size: medium;
+}
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 33.33%;
+  padding: 5px;
 }
