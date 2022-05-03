@@ -380,3 +380,7 @@ font-size: medium;
   flex: 33.33%;
   padding: 5px;
 }
+.lettering {
+color: rgb(250, 250, 250);
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
