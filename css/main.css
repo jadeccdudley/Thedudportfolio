@@ -363,6 +363,8 @@ input[type=submit]:hover {
 .intro {
 font-family: Verdana, Geneva, Tahoma, sans-serif;
 font-size: medium;
+text-align: center;
+background-color: rgb(157, 252, 94);
 }
 .column {
   float: left;
@@ -416,4 +418,9 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .fontdecor {
 font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.responsive1 {
+  width: 30%;
+  height: auto;
+ margin-left: auto;
 }
