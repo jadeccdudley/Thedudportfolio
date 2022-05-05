@@ -401,3 +401,14 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
   height: auto;
  margin-left: auto;
 }
+.responsive2 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+  height:auto;
+}
+.resumeinfo {
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+text-align: center;
+}
