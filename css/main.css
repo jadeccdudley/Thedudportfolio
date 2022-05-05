@@ -409,3 +409,11 @@ font-size: medium;
 color: rgb(250, 250, 250);
 font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+.responsive {
+  width: 80%;
+  height: auto;
+ margin-left: auto;
+}
+.fontdecor {
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
